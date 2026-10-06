@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4efe5">
+  <title>Banzai Суши — вкус с характером</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Banzai Суши — на главную"><span class="brand-mark">万</span><span>BANZAI<small>СУШИ БАР</small></span></a>
+    <nav class="main-nav" aria-label="Главная навигация"><a href="#menu">Меню</a><a href="#story">Наша история</a><a href="#contacts">Контакты</a></nav>
+    <a class="order-link" href="#menu">Заказать <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span></span> ТВОЙ НОВЫЙ РИТУАЛ</p><h1 id="hero-title">Суши,<br><em>которые</em><br>говорят.</h1><p class="hero-description">Японская точность. Смелый характер.<br>И ни одного скучного кусочка.</p><div class="hero-actions"><a class="button-primary" href="#menu">Открыть меню <span>↗</span></a><span class="delivery-note">Свежесть —<br>каждый день</span></div></div>
+      <div class="hero-art" aria-label="Иллюстрация с японскими мотивами"><div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="sushi sushi-one"><span></span></div><div class="sushi sushi-two"><span></span></div><div class="sushi sushi-three"><span></span></div><div class="sushi-model" aria-hidden="true"><div class="model-plate"><div class="plate-rim"></div><div class="model-roll roll-a"><span class="roll-nori"><i class="roll-rice"><b></b></i></span><span class="roll-side"></span></div><div class="model-roll roll-b"><span class="roll-nori"><i class="roll-rice"><b></b></i></span><span class="roll-side"></span></div><div class="model-roll roll-c"><span class="roll-nori"><i class="roll-rice"><b></b></i></span><span class="roll-side"></span></div><div class="model-leaf"></div></div><span class="model-label">BANZAI / おいしい</span></div><span class="vertical-note">おいしい · おいしい</span><span class="art-caption">№ 01 / TOKYO MOOD</span></div>
+      <div class="hero-bottom"><span>АВТОРСКАЯ ЯПОНСКАЯ КУХНЯ</span><span>43°14′ N&nbsp;&nbsp; 76°56′ E</span><a href="#menu" aria-label="Прокрутить к меню">↓</a></div>
+    </section>
+    <section class="intro" id="story"><span class="section-index">01 / НАСТРОЕНИЕ</span><p>Не просто роллы.<br><strong>Маленькое путешествие</strong><br>на другой стороне палочек.</p><span class="intro-stamp">BAN<br>ZAI!</span>  </section>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+  <div class="menu-heading"><div><span class="section-index">02 / ВЫБИРАЙ СВОЁ</span><h2 id="menu-title">Собрали<br><em>вкусное.</em></h2></div><p>Любимые сочетания и немного смелости.<br>Выбирай настроение — остальное мы сделали.</p></div>
+  <div class="menu-toolbar" role="group" aria-label="Фильтр блюд"><button class="filter-chip is-active" data-filter="all" aria-pressed="true">Всё меню <span>12</span></button><button class="filter-chip" data-filter="rolls" aria-pressed="false">Роллы</button><button class="filter-chip" data-filter="sushi" aria-pressed="false">Суши</button><button class="filter-chip" data-filter="sets" aria-pressed="false">Сеты</button><label class="sort-control" for="menu-sort"><span>СОРТИРОВКА</span><select id="menu-sort" aria-label="Сортировать блюда"><option value="default">По умолчанию</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="name">По названию</option></select></label><span class="menu-hint">ЛИСТАЙ И ВЫБИРАЙ <b>↓</b></span></div>
+  <div class="product-grid" id="product-grid">
+    <article class="product-card" data-category="rolls"><div class="product-image"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=85" alt="Ассорти суши и роллов на керамической тарелке" loading="lazy"><span class="product-badge">ХИТ</span><button class="product-add" aria-label="Добавить Филадельфию в заказ">+</button></div><div class="product-info"><div><h3>Филадельфия</h3><p>Лосось · сливочный сыр · авокадо</p></div><strong>2 490 ₸</strong></div></article>
+    <article class="product-card" data-category="rolls"><div class="product-image"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=85" alt="Роллы с лососем и свежими ингредиентами" loading="lazy"><span class="product-badge product-badge-dark">НОВИНКА</span><button class="product-add" aria-label="Добавить Дракон ролл в заказ">+</button></div><div class="product-info"><div><h3>Дракон ролл</h3><p>Угорь · огурец · соус унаги</p></div><strong>2 890 ₸</strong></div></article>
+    <article class="product-card" data-category="sushi"><div class="product-image"><img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=85" alt="Нигири и маки на деревянной доске" loading="lazy"><button class="product-add" aria-label="Добавить Нигири сет в заказ">+</button></div><div class="product-info"><div><h3>Нигири сет</h3><p>Лосось · тунец · креветка</p></div><strong>3 190 ₸</strong></div></article>
+    <article class="product-card" data-category="sets"><div class="product-image"><img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=85" alt="Большой сет роллов для компании" loading="lazy"><span class="product-badge">НА ДВОИХ</span><button class="product-add" aria-label="Добавить Токио сет в заказ">+</button></div><div class="product-info"><div><h3>Токио сет</h3><p>32 кусочка · 4 любимых ролла</p></div><strong>7 490 ₸</strong></div></article>
+    <article class="product-card" data-category="rolls"><div class="product-image"><img src="https://images.unsplash.com/photo-1615361200141-f45040f367be?auto=format&fit=crop&w=900&q=85" alt="Запечённые роллы с аппетитной корочкой" loading="lazy"><button class="product-add" aria-label="Добавить Запечённый ролл в заказ">+</button></div><div class="product-info"><div><h3>Огненный лосось</h3><p>Лосось · спайси соус · кунжут</p></div><strong>2 690 ₸</strong></div></article>
+    <article class="product-card" data-category="sets"><div class="product-image"><img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=85" alt="Сет разнообразных японских роллов" loading="lazy"><span class="product-badge product-badge-dark">БОЛЬШАЯ КОМПАНИЯ</span><button class="product-add" aria-label="Добавить Бандай сет в заказ">+</button></div><div class="product-info"><div><h3>Бандай сет</h3><p>48 кусочков · хватит всем</p></div><strong>9 990 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="sushi"><div class="product-image"><img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=85" alt="Суши с лососем и тунцом" loading="lazy"><button class="product-add" aria-label="Добавить Саке нигири в заказ">+</button></div><div class="product-info"><div><h3>Саке нигири</h3><p>Лосось · рис · васаби</p></div><strong>1 590 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="rolls"><div class="product-image"><img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=85" alt="Хрустящие роллы темпура" loading="lazy"><span class="product-badge product-badge-dark">ХРУСТЯЩИЙ</span><button class="product-add" aria-label="Добавить Темпура ролл в заказ">+</button></div><div class="product-info"><div><h3>Темпура ролл</h3><p>Креветка · авокадо · темпура</p></div><strong>2 790 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="sets"><div class="product-image"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=85" alt="Набор роллов на компанию" loading="lazy"><span class="product-badge">БЕСТСЕЛЛЕР</span><button class="product-add" aria-label="Добавить Ханами сет в заказ">+</button></div><div class="product-info"><div><h3>Ханами сет</h3><p>24 кусочка · роллы и нигири</p></div><strong>5 990 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="rolls"><div class="product-image"><img src="https://images.unsplash.com/photo-1615361200141-f45040f367be?auto=format&fit=crop&w=900&q=85" alt="Ролл с авокадо и огурцом" loading="lazy"><button class="product-add" aria-label="Добавить Зелёный сад в заказ">+</button></div><div class="product-info"><div><h3>Зелёный сад</h3><p>Авокадо · огурец · кунжут</p></div><strong>1 890 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="sushi"><div class="product-image"><img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=85" alt="Нигири с креветкой" loading="lazy"><button class="product-add" aria-label="Добавить Эби нигири в заказ">+</button></div><div class="product-info"><div><h3>Эби нигири</h3><p>Креветка · рис · цитрусовый соус</p></div><strong>1 690 ₸</strong></div></article>
+    <article class="product-card is-hidden" data-category="sets"><div class="product-image"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=85" alt="Большой сет роллов с лососем" loading="lazy"><span class="product-badge product-badge-dark">ДЛЯ КОМПАНИИ</span><button class="product-add" aria-label="Добавить Бандо сет в заказ">+</button></div><div class="product-info"><div><h3>Бандо сет</h3><p>40 кусочков · 5 видов роллов</p></div><strong>8 490 ₸</strong></div></article>  </div>
+  <div class="menu-more-wrap"><button class="menu-more" type="button" aria-controls="product-grid">Показать больше <span>＋</span></button><p class="menu-count" aria-live="polite">Показано 6 из 12 блюд</p></div>  
+</section>
+    <section class="contact-section" id="contacts" aria-labelledby="contact-title"><div class="contact-copy"><span class="section-index">03 / СЛЫШИМ ТЕБЯ</span><h2 id="contact-title">Есть вопрос?<br><em>Напиши.</em></h2><p>Расскажем о меню, поможем с выбором и ответим на ваши пожелания.</p><span class="contact-note">ОБРАТНАЯ СВЯЗЬ · BANZAI СУШИ</span></div><form class="contact-form"><label>Как к вам обращаться<input name="name" autocomplete="name" placeholder="Ваше имя" required></label><label>Телефон или e-mail<input name="contact" autocomplete="email" placeholder="Где вам ответить" required></label><label>Сообщение<textarea name="message" rows="3" placeholder="Напишите пару слов" required></textarea></label><button class="button-primary" type="submit">Отправить сообщение <span>↗</span></button><p class="form-status" aria-live="polite">Форма демонстрационная: сообщения пока не отправляются.</p></form></section><footer><a class="brand" href="#top"><span class="brand-mark">万</span><span>BANZAI<small>СУШИ БАР</small></span></a><span>Свежо. Смело. По-японски.</span><a href="mailto:hello@banzai.example">Написать нам ↗</a></footer>
+  </main>
+  <button class="support-button" aria-label="Открыть поддержку"><span class="support-dot"></span>Поддержка <span class="support-arrow">↗</span></button>
+  <aside class="support-panel" id="support-panel" aria-labelledby="support-title" hidden><div class="support-panel-head"><span class="support-live"><i></i> НА СВЯЗИ</span><button class="support-close" type="button" aria-label="Закрыть поддержку">×</button></div><h2 id="support-title">Привет! Чем помочь?</h2><p>Подскажем по меню и поможем выбрать блюдо.</p><a class="support-cta" href="#contacts">Написать нам <span>↗</span></a><small>Форма связи пока работает как демонстрация.</small></aside>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    toggle.addEventListener("click", () => { const open = toggle.getAttribute("aria-expanded") === "true"; toggle.setAttribute("aria-expanded", String(!open)); nav.classList.toggle("is-open", !open); });
+    nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => { nav.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); }));
+    const moreButton = document.querySelector(".menu-more");
+    const menuCount = document.querySelector(".menu-count");
+    const hiddenCards = () => [...document.querySelectorAll(".product-card.is-hidden")];
+    moreButton.addEventListener("click", () => {
+      hiddenCards().slice(0, 3).forEach((card) => card.classList.remove("is-hidden"));
+      const visibleCount = document.querySelectorAll(".product-card:not(.is-hidden)").length;
+      menuCount.textContent = `Показано ${visibleCount} из 12 блюд`;
+      if (!hiddenCards().length) moreButton.hidden = true;
+    });    const sortSelect = document.querySelector("#menu-sort");
+    sortSelect.addEventListener("change", () => {
+      const grid = document.querySelector("#product-grid");
+      const cards = [...grid.querySelectorAll(".product-card")];
+      const mode = sortSelect.value;
+      cards.sort((a, b) => {
+        const price = (card) => Number(card.querySelector(".product-info strong").textContent.replace(/\D/g, ""));
+        const name = (card) => card.querySelector("h3").textContent.trim().localeCompare(card.querySelector("h3").textContent.trim(), "ru");
+        if (mode === "price-asc") return price(a) - price(b);
+        if (mode === "price-desc") return price(b) - price(a);
+        if (mode === "name") return a.querySelector("h3").textContent.trim().localeCompare(b.querySelector("h3").textContent.trim(), "ru");
+        return Number(a.classList.contains("is-hidden")) - Number(b.classList.contains("is-hidden"));
+      });
+      cards.forEach((card) => grid.append(card));
+    });    document.querySelectorAll(".filter-chip").forEach((chip) => chip.addEventListener("click", () => {
+      const moreButton = document.querySelector(".menu-more");
+    const menuCount = document.querySelector(".menu-count");
+    const hiddenCards = () => [...document.querySelectorAll(".product-card.is-hidden")];
+    moreButton.addEventListener("click", () => {
+      hiddenCards().slice(0, 3).forEach((card) => card.classList.remove("is-hidden"));
+      const visibleCount = document.querySelectorAll(".product-card:not(.is-hidden)").length;
+      menuCount.textContent = `Показано ${visibleCount} из 12 блюд`;
+      if (!hiddenCards().length) moreButton.hidden = true;
+    });    const sortSelect = document.querySelector("#menu-sort");
+    sortSelect.addEventListener("change", () => {
+      const grid = document.querySelector("#product-grid");
+      const cards = [...grid.querySelectorAll(".product-card")];
+      const mode = sortSelect.value;
+      cards.sort((a, b) => {
+        const price = (card) => Number(card.querySelector(".product-info strong").textContent.replace(/\D/g, ""));
+        const name = (card) => card.querySelector("h3").textContent.trim().localeCompare(card.querySelector("h3").textContent.trim(), "ru");
+        if (mode === "price-asc") return price(a) - price(b);
+        if (mode === "price-desc") return price(b) - price(a);
+        if (mode === "name") return a.querySelector("h3").textContent.trim().localeCompare(b.querySelector("h3").textContent.trim(), "ru");
+        return Number(a.classList.contains("is-hidden")) - Number(b.classList.contains("is-hidden"));
+      });
+      cards.forEach((card) => grid.append(card));
+    });    document.querySelectorAll(".filter-chip").forEach((item) => { item.classList.remove("is-active"); item.setAttribute("aria-pressed", "false"); });
+      chip.classList.add("is-active"); chip.setAttribute("aria-pressed", "true");
+      document.querySelectorAll(".product-card").forEach((card) => { card.hidden = chip.dataset.filter !== "all" && card.dataset.category !== chip.dataset.filter; });
+    }));    const supportButton = document.querySelector(".support-button");
+    const supportPanel = document.querySelector(".support-panel");
+    const supportClose = document.querySelector(".support-close");
+    const setSupportOpen = (open) => { supportPanel.hidden = !open; supportButton.setAttribute("aria-expanded", String(open)); if (open) supportClose.focus(); };
+    supportButton.setAttribute("aria-expanded", "false");
+    supportButton.addEventListener("click", () => setSupportOpen(supportPanel.hidden));
+    supportClose.addEventListener("click", () => { setSupportOpen(false); supportButton.focus(); });
+    supportPanel.querySelector(".support-cta").addEventListener("click", () => setSupportOpen(false));
+    document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !supportPanel.hidden) { setSupportOpen(false); supportButton.focus(); } });
+    const contactForm = document.querySelector(".contact-form");
+    contactForm.addEventListener("submit", (event) => { event.preventDefault(); contactForm.querySelector(".form-status").textContent = "Спасибо! Это демо-форма: подключите канал получения сообщений, чтобы обращения отправлялись."; contactForm.reset(); });    const revealItems = document.querySelectorAll(".intro, .menu-heading, .menu-toolbar, .product-card, footer");
+    revealItems.forEach((item) => item.classList.add("reveal-on-scroll"));
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach((item) => revealObserver.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+    }  </script>
+</body>
+</html>
+
